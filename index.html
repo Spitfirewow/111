@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Gif search</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="requestWrapper">
+            <div class="request">
+                <input class="requestInput" name="requestInput" type="text" id="requestInput">
+                <button class="requestBtn" id="requestBtn" style="color:white" disabled>Search</button>
+            </div>
+        </div>
+        <div class="gifsContainer" id="gifsContainer"></div>
+        <div class="gifsContainer" id="gifInfoContainer"></div>
+        
+        <div class="failMsgWrapper">
+            <h1 class="failMsg" id="failMsg">
+                Nothing found
+            </h1>
+        </div>
+        <div class="buttonWrapper">
+            <button type="button" class="moreBtn" id="moreBtn">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+        <div class="buttonWrapper">
+            <button class="backBtn" id="backBtn" style="color:white">Back to search</button>
+        </div>
+        </div>
+        </div>
+        <template id="gifTpl">
+            <div class="gifWrapper">
+                <div class="gifs">
+                    <div class="gifPicture"></div>
+                </div>
+            </div>
+        </template>
+        <template id="gifInfoTpl">
+            <div class="gifInfoWrapper">
+                <div class="gifPicture"></div>
+                <div class="gifName"></div>
+                <div class="gifDate"></div>
+                <div class="gifAuthorName"></div>
+                <div class="gifAuthorPicture"></div>
+            </div>
+        </template>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+body{
+    margin: 0 auto;
+    min-width: 700px;
+}
+
+.requestWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 45px;
+    padding: 10px 0;
+    padding-bottom: 0;
+    max-width: 1100px;
+}
+
+.requestInput{
+    width: 90%;
+    border-width: 3px;
+    border-right: 0;
+    border-style: solid;
+    border-color: #c20855;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.requestBtn, .backBtn{
+    width: 100px;
+    background-color: #c20855;
+    border: none;
+}
+
+.requestBtn:active, .backBtn:active{
+    background-color: #830137;
+}
+
+.requestBtn, .requestInput{
+    color: black;
+    font-size: 19px;
+    outline: none;
+}
+
+.backBtn{
+    font-size: 19px;
+    outline: none;
+    color:#c20855;
+    padding: 0;
+    display: none;
+}
+
+.gifWrapper{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.gifInfoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    color: #333;
+    line-height: 1.4;
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.gifs{
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+}
+
+.gifPicture{
+    background-size: cover;
+}
+
+.buttonWrapper{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.moreBtn{
+    font-size: 75px;
+    background: none;
+    border: none;
+    outline: none;
+    color: 	#c20855;
+    padding: 0;
+    display: none;
+}
+
+.moreBtn:active{
+    color: #86043b;
+}
+
+.moreBtn:hover{
+    cursor: pointer;
+}
+
+.gifLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:inherit;
+}
+
+.failMsgWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.failMsg{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.gifsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
